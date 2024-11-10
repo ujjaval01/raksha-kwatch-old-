@@ -1,0 +1,171 @@
+
+
+/* style.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Add an overlay to the background */
+.background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+    z-index: -1;
+}
+
+/* Card design for the form */
+.form-card {
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    max-width: 400px;
+    width: 100%;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #007bff;
+}
+
+input.form-control {
+    padding: 12px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+input.form-control:focus {
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+    border-color: #007bff;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+.alert {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+label {
+    font-size: 1em;
+    margin-bottom: 8px;
+    display: block;
+    color: #555;
+}
+
+input[type="text"], 
+input[type="password"], 
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+p {
+    margin-top: 20px;
+    color: red;
+    text-align: center;
+}
+
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 5\'%3E%3Cpath fill=\'%23000\' d=\'M2 0L0 2h4zM0 3l2 2 2-2z\'/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
